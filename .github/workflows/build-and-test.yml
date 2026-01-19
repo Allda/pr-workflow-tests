@@ -39,7 +39,7 @@ jobs:
         run: |
           echo "Building image with tag ${GITHUB_SHA}"
 
-          echo ${{ secrets.EXAMPLE_SECRET }}
+          echo "${{ secrets.EXAMPLE_SECRET }}"
 
   integration-tests:
     needs: [build]
